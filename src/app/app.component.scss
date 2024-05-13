@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #522FBA;
+  height: 100vh;
+}
+
+.titles {
+  text-align: center;
+  padding: 25px 75px;
+}
+.title {
+  font-size: 24px;
+  color: #FFF;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.subtitle {
+  font-size: 14px;
+  color: #FFF;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card {
+  background-color: #FFF;
+}
+.card-body {
+  padding: 47px;
+}
+
+
+.money {
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.change-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background-color: #6E46E6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  border: 1px solid #6E46E6;
+  border-radius: 6px;
+
+  &__text {
+    background-color: #F3F3F6;
+    width: 97px;
+    font-size: 14px;
+    color: #6E46E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+
+  &__amount {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding: 10px;
+
+    &-text {
+      color: #717191;
+      font-size: 12px;
+    }
+
+    &-number {
+      font-size: 16px;
+      border: none;
+      text-align: right;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.start-button {
+  background-color: #6E46E6;
+  border: 1px solid #4A28AF;
+  color: white;
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 100px;
+    background-image: linear-gradient(to bottom, #4A28AF, #6E46E6);
+  }
+  .titles {
+    text-align: left;
+    width: 342px;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .card {
+    width: 386px;
+    border-radius: 8px;
+  }
+}
