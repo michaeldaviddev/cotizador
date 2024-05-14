@@ -24,9 +24,11 @@ export class AppComponent {
   purchasePrice: number = 0;
 
   public flexDirection: string = 'column';
+  public dollarSale: boolean = false;
 
   toggleFlexDirection() {
     this.flexDirection = (this.flexDirection === 'column') ? 'column-reverse' : 'column';
+    this.dollarSale = (this.flexDirection === 'column') ? false : true;
   }
 
   ngOnInit() {
